@@ -5,8 +5,7 @@
  'sunburst
 
  ;; emacs
- '(cursor ((((class color) (min-colors 89)) (:background "yellow"))))
- '(bold ((,class (:bold t))))
+ '(cursor ((t (:background "yellow"))))
  '(default ((t (:background "#111" :foreground "#ddd"))))
  '(mode-line ((t (:background "#e6e5e4" :foreground "black"))))
  '(highlight ((t (:bold t :slant italic))))
@@ -18,8 +17,9 @@
  '(bold-italic ((t (:bold t :slant italic))))
  '(border-glyph ((t (nil))))
  '(underline ((nil (:underline nil))))
- '(text-cursor ((t (:background "yellow" :foreground "black"))))
  '(primary-selection ((t (:background "#222"))))
+ '(border-coler ((t (:background "#111"))))
+ '(region ((t (:background "#4a410d"))))
 
  ;; font-lock
  '(font-lock-builtin-face ((t (:foreground "#dd7b3b"))))
@@ -80,26 +80,8 @@
  ;; highline
  '(highline-face ((t (:background "#4a410d"))))
 
+ ;; MultiMode
+ '(mmm-default-submode-face ((t (:background "#111"))))
  )
 
-(defun color-theme-sunburst ()
-
-  (color-theme-install
-   '(color-theme-sunburst
-     (
-	  ;;(background-color . "#111")
-      (background-mode . dark)
-      (border-color . "#111")
-      ;;(cursor-color . "yellow")
-      ;;(foreground-color . "#ddd")
-      (mouse-color . "sienna1")
-)
-
-     (buffers-tab ((t (:background "#111" :foreground "#ddd"))))
-	 (region ((t (:background "#4a410d"))))
-     (mmm-default-submode-face ((t (:background "#111"))))
-
-)))
-
 (provide-theme 'sunburst)
-
