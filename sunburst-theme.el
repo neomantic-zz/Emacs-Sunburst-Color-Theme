@@ -21,7 +21,7 @@
  '(border-glyph ((t (nil))))
  '(underline ((nil (:underline nil))))
  '(primary-selection ((t (:background "#222"))))
- '(border-coler ((t (:background "#111"))))
+ '(border-color ((t (:background "#111"))))
  '(region ((t (:background "#4a410d"))))
 
  ;; font-lock
